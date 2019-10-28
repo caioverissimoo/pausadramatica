@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Carme&display=swap" rel="stylesheet">
+    <title>PausaDramatica</title>
+</head>
+
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt='PausaDramatica' id="logo"></img>
+
+        <!--
+        <button>Entrar</button>
+        <button>Registrar</button>
+        -->
+    </header>
+    <div class="main-container">
+        <ul>
+            <li>
+                <img src="https://asdistancias.files.wordpress.com/2015/11/img_20151028_151305.jpg" alt="" />
+                <footer>
+                    <strong>Coliseu</strong>
+                    <p>Coliseu, também conhecido como Anfiteatro Flaviano, é um anfiteatro oval localizado no centro da cidade de Roma, capital da Itália. Construído com concreto e areia, é o maior anfiteatro já construído e está situado a leste do Fórum Romano</p>
+                </footer>
+
+                <div class="buttons">
+                    <button type="button">
+                        <img src="{{ url_for('static', filename='img/salvar.svg') }}" />
+                    </button>
+                    <button type="button">
+                        <img src="{{ url_for('static', filename='img/like.svg') }}" />
+                    </button>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
